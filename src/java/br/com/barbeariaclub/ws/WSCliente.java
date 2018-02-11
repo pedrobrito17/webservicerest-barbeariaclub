@@ -34,9 +34,8 @@ public class WSCliente {
         }
     }
        
-    @Path("/cliente/{email}/{senha}") //????
+    @Path("/cliente/{email}/{senha}")
     @GET
-    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Cliente getCliente(@PathParam("email") String email, 
             @PathParam("senha") String senha){
